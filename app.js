@@ -10,7 +10,8 @@ const userRoutes = require("./api/routes/users");
 
 mongoose.connect("mongodb://localhost:27017/node-shop", {
   useUnifiedTopology: true,
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useCreateIndex: true
 });
 
 app.use(morgan("dev"));
